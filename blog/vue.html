@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VUE 源码 | 前端日志</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="欢迎访问我的前端日志">
+    <link rel="preload" href="/assets/css/0.styles.3101f2cb.css" as="style"><link rel="preload" href="/assets/js/app.9d939037.js" as="script"><link rel="preload" href="/assets/js/2.a9e2e0dc.js" as="script"><link rel="preload" href="/assets/js/27.296bb62d.js" as="script"><link rel="prefetch" href="/assets/js/10.5b0691a2.js"><link rel="prefetch" href="/assets/js/11.8b2bbd0d.js"><link rel="prefetch" href="/assets/js/12.fc874a22.js"><link rel="prefetch" href="/assets/js/13.bf2d754c.js"><link rel="prefetch" href="/assets/js/14.8eabdbf1.js"><link rel="prefetch" href="/assets/js/15.1bedd3a8.js"><link rel="prefetch" href="/assets/js/16.7a0d741f.js"><link rel="prefetch" href="/assets/js/17.c009ce41.js"><link rel="prefetch" href="/assets/js/18.6c64483e.js"><link rel="prefetch" href="/assets/js/19.e3a2574a.js"><link rel="prefetch" href="/assets/js/20.5c18e199.js"><link rel="prefetch" href="/assets/js/21.ae5e721b.js"><link rel="prefetch" href="/assets/js/22.204c7f31.js"><link rel="prefetch" href="/assets/js/23.70b5a24b.js"><link rel="prefetch" href="/assets/js/24.09270325.js"><link rel="prefetch" href="/assets/js/25.2e4c7bd4.js"><link rel="prefetch" href="/assets/js/26.c62e5742.js"><link rel="prefetch" href="/assets/js/28.f0a5a0fa.js"><link rel="prefetch" href="/assets/js/29.277287f4.js"><link rel="prefetch" href="/assets/js/3.efe69f67.js"><link rel="prefetch" href="/assets/js/30.bc9f1d5a.js"><link rel="prefetch" href="/assets/js/31.bcd9a905.js"><link rel="prefetch" href="/assets/js/32.4fdd173f.js"><link rel="prefetch" href="/assets/js/33.4982eca0.js"><link rel="prefetch" href="/assets/js/34.0ba07bbd.js"><link rel="prefetch" href="/assets/js/35.f8d41985.js"><link rel="prefetch" href="/assets/js/36.f8096ff6.js"><link rel="prefetch" href="/assets/js/37.1e61ed4e.js"><link rel="prefetch" href="/assets/js/38.3261b4c0.js"><link rel="prefetch" href="/assets/js/39.b1455a6b.js"><link rel="prefetch" href="/assets/js/4.d67d0074.js"><link rel="prefetch" href="/assets/js/40.33ce4fc5.js"><link rel="prefetch" href="/assets/js/41.18dadfda.js"><link rel="prefetch" href="/assets/js/5.4563f432.js"><link rel="prefetch" href="/assets/js/6.802b4f6b.js"><link rel="prefetch" href="/assets/js/7.64f14002.js"><link rel="prefetch" href="/assets/js/8.ca38c4ec.js"><link rel="prefetch" href="/assets/js/9.2f1d5426.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3101f2cb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端日志</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">
+  博客
+</a></div><div class="nav-item"><a href="/combat/" class="nav-link">
+  实战
+</a></div><div class="nav-item"><a href="/book/" class="nav-link">
+  阅读
+</a></div><div class="nav-item"><a href="https://github.com/wumao016" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">
+  博客
+</a></div><div class="nav-item"><a href="/combat/" class="nav-link">
+  实战
+</a></div><div class="nav-item"><a href="/book/" class="nav-link">
+  阅读
+</a></div><div class="nav-item"><a href="https://github.com/wumao016" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>DevOps</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/php.html" class="sidebar-link">工具的安装</a></li><li><a href="/blog/php1.html" class="sidebar-link">PHP</a></li><li><a href="/blog/node.html" class="sidebar-link">Node.js</a></li><li><a href="/blog/webpack.html" class="sidebar-link">Webpack 使用</a></li><li><a href="/blog/gulp.html" class="sidebar-link">构建工具和脚手架</a></li><li><a href="/blog/optimization.html" class="sidebar-link">性能优化</a></li><li><a href="/blog/nginx.html" class="sidebar-link">Nginx</a></li><li><a href="/blog/engineering.html" class="sidebar-link">前端工程化</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Framework</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/express.html" class="sidebar-link">Express</a></li><li><a href="/blog/koa1.html" class="sidebar-link">Koa</a></li><li><a href="/blog/vue.html" class="active sidebar-link">VUE 源码</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/vue.html#源码结构" class="sidebar-link">源码结构</a></li><li class="sidebar-sub-header"><a href="/blog/vue.html#双向数据绑定" class="sidebar-link">双向数据绑定</a></li><li class="sidebar-sub-header"><a href="/blog/vue.html#vue-setstate" class="sidebar-link">Vue SetState</a></li><li class="sidebar-sub-header"><a href="/blog/vue.html#virtual-dom" class="sidebar-link">Virtual-dom</a></li><li class="sidebar-sub-header"><a href="/blog/vue.html#vue2整体解析流程" class="sidebar-link">Vue2整体解析流程</a></li><li class="sidebar-sub-header"><a href="/blog/vue.html#vue运行时优化" class="sidebar-link">Vue运行时优化</a></li><li class="sidebar-sub-header"><a href="/blog/vue.html#vue3源码" class="sidebar-link">Vue3源码</a></li></ul></li><li><a href="/blog/react.html" class="sidebar-link">React 使用</a></li><li><a href="/blog/uniapp.html" class="sidebar-link">Uni-app使用</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>CSS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/css-3d.html" class="sidebar-link">CSS使用</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>JS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/es5.html" class="sidebar-link">ES5.1</a></li><li><a href="/blog/es6.html" class="sidebar-link">ES6</a></li><li><a href="/blog/javascript-QA.html" class="sidebar-link">Javascript与QA工程师</a></li><li><a href="/blog/js.html" class="sidebar-link">JavaScript 精粹</a></li><li><a href="/blog/js-function.html" class="sidebar-link">函数式编程</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>其它</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/html.html" class="sidebar-link">同源和跨域</a></li><li><a href="/blog/http.html" class="sidebar-link">HTTP</a></li><li><a href="/blog/write.html" class="sidebar-link">手写函数</a></li><li><a href="/blog/test.html" class="sidebar-link">习题总结</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue-源码"><a href="#vue-源码" class="header-anchor">#</a> VUE 源码</h1> <h3 id="探讨内容"><a href="#探讨内容" class="header-anchor">#</a> 探讨内容</h3> <ul><li>Vue架构概览</li> <li>双向数据绑定&amp;SetState原理</li> <li>Vue2 Virtual-dom</li> <li>Vue2 DOM Diff算法解析</li> <li>Vue2整体解析流程</li> <li>Vue运行时优化</li> <li>再见Vue~前端技术框架选型</li></ul> <h2 id="源码结构"><a href="#源码结构" class="header-anchor">#</a> 源码结构</h2> <p>源码下载地址 <a href="https://github.com/vuejs/vue" target="_blank" rel="noopener noreferrer">源码地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><img src="vue_1.png" alt="源码目录"></p> <p>首先，第一层目录</p> <p>1.benchmarks 跑分。测试性能测试</p> <p>2.dist 打包出的代码。</p> <p>3.examples 例子。</p> <p>4.flow 类型规范。一个框架</p> <p>5.packages 用lerna框架做出来，多包管理工具。 eg:vue SSR-&gt;vue-server-renderer-&gt;js-&gt;VM node</p> <p>6.scripts 打包脚本。</p> <p>7.src 逻辑代码，核心代码。</p> <p>8.test 测试。</p> <p>9.types flow定义的ts。</p> <p>在看核心代码前，先分析一下dist中为什么打包出来很多不一样的vue。</p> <ul><li>Runtime only (vue运行时)</li> <li>Runtime+compiler (在线编译) 通过js编译成with(),with转成js render()</li> <li>还有不同规范</li></ul> <p><strong>src 核心代码结构</strong></p> <p><img src="vue_2.png" alt="src"></p> <p>1./compiler 目录是编译模版；(离线编译) vue-&gt;js</p> <p>2./core ⽬录是 Vue.js 的核⼼(也是后面的重点)；</p> <p>3./platforms ⽬录是针对核⼼模块的 ‘平台’ 模块，</p> <p>4.platforms 目录下有 web weex ⽬录。 web 目录下有对应的 /compiler、 /runtime、
+/server、 /util目录；（这里的compiler是在线编译，外面的compiler是离线编译）</p> <p>5./server 目录是处理服务端渲染；</p> <p>6./sfc 目录处理单⽂件 .vue；</p> <p>7./shared 目录提供全局用到的工具</p> <p>结论：Vue.js 的组成是由 core + 对应的 ‘平台’ 补充代码构成（独立构建和运行时构建
+只是 platforms 下 web 平台的两种选择）。
+<img src="vue_3.png" alt="core"></p> <h2 id="双向数据绑定"><a href="#双向数据绑定" class="header-anchor">#</a> 双向数据绑定</h2> <p><strong>双向绑定（响应式原理）所涉及到的技术</strong></p> <ul><li>1.Object.defineProperty</li> <li>2.Observer</li> <li>3.Watcher</li> <li>4.Dep</li> <li>5.Directive
+<img src="vue_4.png" alt="双向数据绑定"></li></ul> <h3 id="_1-object-defineproperty"><a href="#_1-object-defineproperty" class="header-anchor">#</a> 1.Object.defineProperty</h3> <p><img src="vue_5.png" alt="defineProperty"> <strong>总结</strong></p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>&lt;span<span class="token punctuation">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span>a<span class="token punctuation">}</span><span class="token punctuation">}</span>&lt;/span<span class="token punctuation">&gt;</span> <span class="token punctuation">-</span><span class="token punctuation">&gt;</span> getter <span class="token punctuation">-</span><span class="token punctuation">&gt;</span> watcher <span class="token punctuation">-</span><span class="token punctuation">&gt;</span> dep(并且返回数据渲染)<span class="token punctuation">{</span>a<span class="token punctuation">:</span>watcher<span class="token punctuation">}</span>
+
+                   <span class="token punctuation">-</span><span class="token punctuation">&gt;</span> setter <span class="token punctuation">-</span><span class="token punctuation">&gt;</span>dep <span class="token punctuation">-</span><span class="token punctuation">&gt;</span> <span class="token punctuation">{</span>a<span class="token punctuation">:</span>watcher<span class="token punctuation">}</span> <span class="token punctuation">-</span><span class="token punctuation">&gt;</span> &lt;span<span class="token punctuation">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span>a<span class="token punctuation">}</span><span class="token punctuation">}</span>&lt;/span<span class="token punctuation">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="vue_9.png" alt="defineProperty">
+setter 触发消息到 Watcher watcher帮忙告诉 Directive 更新 DOM，DOM中修改了数据也会通知Watcher，watcher帮忙修改数据。</p> <h3 id="_2-observer"><a href="#_2-observer" class="header-anchor">#</a> 2.Observer</h3> <p><img src="vue_6.png" alt="observer"> <img src="vue_7.png" alt="observer"> <strong>src/core/observer/index.js</strong> ,<strong>src/core/observer/array.js</strong></p> <p><strong>Observer主要处理过程：</strong></p> <p>Observer会观察两种类型的数据，Object 与 Array</p> <p>对于Array类型的数据，由于 JavaScript 的限制， Vue 不能检测变化,会先重写操作数组
+的原型方法，重写后能达到两个目的，</p> <p>1.当数组发生变化时，触发 notify</p> <p>如果是 push，unshift，splice 这些添加新元素的操作，则会使用observer观察新添加的
+数据</p> <p>重写完原型方法后，遍历拿到数组中的每个数据 使用observer观察它</p> <p>2.而对于Object类型的数据，则遍历它的每个key，使用 defineProperty 设置 getter 和
+setter，当触发getter的时候，observer则开始收集依赖，而触发setter的时候，observe
+则触发notify。
+<img src="vue_8.png" alt="observer"> <strong>总结observer</strong></p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>observer(data) <span class="token punctuation">-</span><span class="token punctuation">&gt;</span> 是否是数组
+                 是<span class="token punctuation">-</span><span class="token punctuation">&gt;</span>重写数组
+   			      1.arr=<span class="token punctuation">[</span><span class="token punctuation">]</span>._proto_=ArrayMethed<span class="token punctuation">{</span><span class="token punctuation">}</span>
+   				  ArrayMethed<span class="token punctuation">-</span><span class="token punctuation">&gt;</span>继承了<span class="token punctuation">-</span><span class="token punctuation">&gt;</span>数组方法（拦截 def）
+                 否<span class="token punctuation">-</span><span class="token punctuation">&gt;</span>this.walk<span class="token punctuation">-</span><span class="token punctuation">&gt;</span>object.key(<span class="token punctuation">{</span><span class="token punctuation">}</span>)<span class="token punctuation">-</span><span class="token punctuation">&gt;</span>遍历所有的key(object.defineProperty)
+   			  object.defineProperty(
+   			     get<span class="token punctuation">:</span>//把对应的依赖收集到电话本Dep.push()
+   				 set<span class="token punctuation">:</span>//分发，触发所有依赖 遍历Dep电话本
+   			  )
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="_3-watcher"><a href="#_3-watcher" class="header-anchor">#</a> 3.Watcher</h3> <p><strong>src/core/observer/watcher.js</strong></p> <p>Watcher 是将模板和 Observer 对象结合在一起的纽带。Watcher 是订阅者模式中的订阅者。Watcher 的两
+个参数： expOrFn 最终会被转换为 getter 函数， cb 是更新时执行的回调。依赖收集的入口就是get函数。
+<img src="vue_10.png" alt="watcher">
+getter 函数是用来连接监控属性与 Watcher 的关键。
+<img src="vue_11.png" alt="watcher"></p> <h3 id="_4-dep"><a href="#_4-dep" class="header-anchor">#</a> 4.Dep</h3> <p><strong>src/core/observer/dep.js</strong> <img src="vue_12.png" alt="dep"></p> <h3 id="_5-directive"><a href="#_5-directive" class="header-anchor">#</a> 5.Directive</h3> <p><img src="vue_13.png" alt="directive">
+vue内置了这么多的指令，这些指令都会抛出两个接口bind 和 update，这两个接口的作用是，编译的最后一步是执行所有用到的指令的bind方
+法，而 update 方法则是当watcher 触发 update 时，Directive会触发指令的update方法</p> <p>observe -&gt; 触发setter -&gt;</p> <p>watcher -&gt; 触发update -&gt;</p> <p>Directive -&gt; 触发update -&gt;</p> <p>指令</p> <h3 id="实践"><a href="#实践" class="header-anchor">#</a> 实践</h3> <p>手写实现数据双向绑定，<a href="https://github.com/wumao016/myVue" target="_blank" rel="noopener noreferrer">代码地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <blockquote><p>其他的一些代码解析</p></blockquote> <p><strong>1.vue.use的实现</strong> <strong>src/core/global-api/use.js</strong> <img src="vue_14.png" alt="use"></p> <h2 id="vue-setstate"><a href="#vue-setstate" class="header-anchor">#</a> Vue SetState</h2> <p>总结</p> <p>1.Batch Update</p> <p>2.Transaction对一个函数进行包装，让React有机会在一个函数执行前和执行后运行特定的逻辑，从
+而完成对整个Batch Update流程的控制。</p> <p>简单的说就是在要执行的函数中用事务包裹起来，在函数执行前加入initialize阶段，函数执行，最后
+执行close阶段。那么Batch Update中</p> <p>在事件initialize阶段，一个update queue被创建。在事件中调用setState方法时，状态不会被立即调
+用，而是被push进Update queue中。</p> <p>函数执行结束调用事件的close阶段，Update queue会被flush，这事新的状态才会被应用到组件上并开
+始后续的Virtual DOM更新，biff算法来对model更新。</p> <p>3.当model被修改时，对应的watcher会被推入Update queue， 与此同时还会在异步队列中添加一个task用于flush
+当前的Update queue。</p> <p>这样一来，当前的task中的其他watcher会被推进同一个Update queue中。当前task执行结束后，异步队列下一个
+task执行，update queue
+会被 flush，并进行后续的更新操作。
+为了让 flush 动作能在当前 Task 结束后尽可能早的开始，Vue 会优先尝试将任务 micro-task 队列，具体来说，
+在浏览器环境中 Vue 会优
+先尝试使用 MutationObserver API 或 Promise，如果两者都不可用，则 fallback 到 setTimeout。
+对比两个框架可以发现 React 基于 Transition 实现的 Batch Query 是一个不依赖语言特性的通用模式，因此有
+更稳定可控的表现，但缺点是无法完全覆盖所有情况</p> <h2 id="virtual-dom"><a href="#virtual-dom" class="header-anchor">#</a> Virtual-dom</h2> <p>DOM操作很慢是两个原因，一个是本身操作就不快，第
+二是我们（还有很多框架）处理dom的方式很慢，Virtual
+Dom解决了我们这些愚蠢的程序员对Dom的低劣操作，它让我
+们不需要进行Dom操作，而是将希望展现的最终结果告诉
+React(vue)，React(vue)通过一个简化的Dom即Virtual dom进行
+render，当你试图改变显示内容时，新生成的Virtual Dom会
+与现在的Virtual dom对比，通过diff算法找到区别，这些操作
+都是在快速的js中完成的，最后对实际Dom进行最小的Dom操
+作来完成效果，这就是Virtual Dom的概念。
+rective(descriptor, this, node, host, scope, frag)</p> <blockquote><p>Virtual-dom</p></blockquote> <p>‘Virtual-dom’是一系列的模块集合，用来提供声明式的DOM渲染。来看一个简单的 DOM 片段.
+本质上就是在 JS 和 DOM 之间做了一个缓存。可以类比 CPU 和硬盘，既然硬盘这么慢，我
+们就在它们之间加个缓存：既然 DOM 这么慢，我们就在它们 JS 和 DOM 之间加个缓存。
+CPU（JS）只操作内存（Virtual DOM），最后的时候再把变更写入硬盘（DOM）。
+<img src="vue_15.png" alt="dom"> <strong>VIRTUAL-DOM-&gt;CORE/VDOM/CREATE-ELEMENT.JS</strong> <img src="vue_16.png" alt="dom"></p> <h2 id="vue2整体解析流程"><a href="#vue2整体解析流程" class="header-anchor">#</a> Vue2整体解析流程</h2> <p><img src="vue_17.png" alt="生命周期"> <img src="vue_18.png" alt="生命周期">
+2.0 的版本中这一块有很大的改动，1.0 的版本中 Vue 使用的是 DocumentFragment 来进行模板解
+析，而 2.0 中作者采用的 John Resig 的 HTML Parser 将模板解析成可直接执行的 render 函数，这是
+模板预编译和服务端渲染（SSR）的前提；</p> <h2 id="vue运行时优化"><a href="#vue运行时优化" class="header-anchor">#</a> Vue运行时优化</h2> <p><img src="vue_19.png" alt="优化"> <img src="vue_20.png" alt="优化"></p> <h2 id="vue3源码"><a href="#vue3源码" class="header-anchor">#</a> Vue3源码</h2> <p>源码地址<a href="https://github.com/vuejs/vue-next" target="_blank" rel="noopener noreferrer">源码地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><strong>区别</strong></p> <p>1.tempalte：vue2-&gt;正则   vue3-&gt;词法分析-&gt;语法分析-&gt;AST</p> <p>2.核心逻辑 object.defineproperty-&gt;proxy</p> <p><strong>提升</strong></p> <p>1.性能 模版解析的优化，组件优化，虚拟dom优化</p> <p>2.tree shaking vue2打包出来 -》vue.min.js vue.runtime.min.js ,vue3 -》数据响应处理，模版解析处理，端处理。</p> <p>3.composition API</p> <p>4.ts proxy</p> <h3 id="模版解析"><a href="#模版解析" class="header-anchor">#</a> 模版解析</h3> <p>官方模版解析<a href="https://vue-next-template-explorer.netlify.app/" target="_blank" rel="noopener noreferrer">地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><strong>词法分析</strong></p> <p>通过一个规范把模版分析，<a href="https://github.com/antlr/grammars-v4" target="_blank" rel="noopener noreferrer">词法分析参考规则<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，解析成tonken，再经过语法分析，就会形成AST</p> <h3 id="数据双向响应"><a href="#数据双向响应" class="header-anchor">#</a> 数据双向响应</h3> <p><strong>proxy</strong></p> <p>vue3的数据双向响应用的是proxy，proxy自身有一些缺点：1.数据挪动 多次触发。2.不能拦截深层次的对象数据（vue3的处理是，
+对于深层次嵌套的对象，一开始没有递归，是在获取的时候判断是否是对象，再处理成为响应式数据）。</p> <h3 id="vue3-packages目录分析"><a href="#vue3-packages目录分析" class="header-anchor">#</a> vue3 packages目录分析</h3> <ul><li>compiler-core -》编译器</li> <li>compiler-dom -》针对浏览器而言的编译器</li> <li>reactivity -》相当于vue2的observer -》数据响应系统</li> <li>runtime-core -》运行时</li> <li>runtime-dom -》专门针对于浏览器的运行时的</li> <li>server-renderer -》服务端渲染</li></ul> <p><strong>reactivity</strong></p> <p>数据响应架构
+<img src="vue_21.png" alt="架构"></p> <h3 id="vue3与vue2比较"><a href="#vue3与vue2比较" class="header-anchor">#</a> vue3与vue2比较</h3> <p><strong>vue2 options API</strong></p> <ul><li>beforeCreate</li> <li>created</li> <li>beforeMount</li> <li>mounted</li> <li>beforeUpdate</li> <li>updated</li> <li>beforeDestory</li> <li>destoryed</li> <li>errorCaptured</li></ul> <p><strong>vue3 composition API</strong></p> <ul><li>setup()</li> <li>setup()</li> <li>onBeforeMount</li> <li>onMounted</li> <li>onBeforeUpdate</li> <li>onUpdated</li> <li>onBeforeUnmount</li> <li>onUnmounted</li> <li>onErrorCaptured</li></ul> <p><strong>vue2 basic</strong></p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  el<span class="token operator">:</span> <span class="token string">&quot;#app&quot;</span><span class="token punctuation">,</span>
+  template<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    &lt;div&gt;
+        &lt;div&gt;Count is: {{ this.count }}, double is: {{ this.double }}&lt;/div&gt;
+        &lt;button @click=&quot;increment&quot;&gt;Add&lt;/button&gt;
+    &lt;/div&gt;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+  data<span class="token operator">:</span> <span class="token punctuation">{</span>
+    count<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">double</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//html里直接引入</span>
+<span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">&quot;./js/setup_v2.js&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><p><strong>vue3 basic</strong></p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> reactive<span class="token punctuation">,</span> computed <span class="token punctuation">}</span> <span class="token operator">=</span> Vue<span class="token punctuation">;</span>
+<span class="token keyword">const</span> App <span class="token operator">=</span> <span class="token punctuation">{</span>
+  template<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+        &lt;div&gt;Count is: {{ state.count }}, double is: {{ state.double }}&lt;/div&gt;
+        &lt;button @click=&quot;increment&quot;&gt;Add&lt;/button&gt;
+    </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;🐻&quot;</span><span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment">//window</span>
+    <span class="token comment">// 创建响应数据</span>
+    <span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      count<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      double<span class="token operator">:</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> state<span class="token punctuation">.</span>count <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">function</span> <span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>count<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">,</span>
+      increment<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">//html里</span>
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> createApp <span class="token punctuation">}</span> <span class="token operator">=</span> Vue<span class="token punctuation">;</span>
+  <span class="token comment">// 最新alpha版本中写法变了</span>
+  <span class="token function">createApp</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">&quot;#app&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><p><strong>vue3 setup</strong></p> <ul><li>1.setup是一个新的组件选项，也是其他API的入口。
+也就是说，你所有的操作都将在setup函数内部定义和执行，
+Vue3.0也将用函数代替Vue2.x的类也就是new Vue()</li> <li>2.setup 第一个参数是props,这里的props和Vue2.x中的props一致。</li> <li>3.何时调用？setup是在一个组件实例被创建时，初始化了 props 之后调用，
+其实就是取代了Vue2.x的careted和beforeCreate。</li> <li>4.setup返回一个对象，对象中的属性将直接暴露给模板渲染的上下文。
+而在Vue2.x中，你定义的属性都会被Vue内部无条件暴露给模板渲染上下文。</li> <li>5.setup第二个参数(context)提供一个上下文对象，这个上下文对象提供一个可选的属性列表，和Vue2.x中挂载在this上的属性列表一致。context具有与this.$attrs，this.$slots，this.$emit，this.$parent，this.$root对应的属性（属性，插槽，emit，parent，root）。</li></ul> <p><code>1.props对比Vue2.x主要要注意的地方 (1)Vue2.x中props绑定在this上，我们可以通过this.props.propsName获取对应的值， Vue3.0后Props将变成setup的第一个参数,而setup也是在初始化props之后才被调用。有点像某act的感觉 (2)类型定义的时候，仍然可以像Vue2.x一样，同时也支持TS (3)props 对象是响应式的 —— 它可以被当作数据源去观测，当后续 props 发生变动时它也会被框架内部同步更新。 但对于用户代码来说，它是不可修改的（会导致警告）</code></p> <p><strong>vue3 rective</strong></p> <ul><li>vue2里没有rective，相当于date</li> <li>vue3 数据监听函数</li> <li>1.reactive函数接收一个对象作为参数，返回这个对象的响应式代理，等价Vue2.x的Vue.observable()</li> <li>2.对比Vue2.x的observable()，组件实例在初始化的时候会将 data 整个对象变为可观察对象，
+通过递归的方式给每个 Key 使用 Object.defineProperty 加上 getter 和 settter ，
+如果是数组就重写代理数组对象的七个方法。虽然给我们带来的便利，但是在大型项目上来说，性能开销就很大了。
+Vue3.0之后不再将主动监听所有的数据，而是将选择权给你，实例在初始化时不需要再去递归 data 对象了，
+从而降低了组件实例化的时间。</li></ul> <p><strong>vue3 ref</strong></p> <ul><li><p>ref接收一个原始值，返回一个包装对象，
+包装对象具有.value属性。通过.value访问这个值。</p></li> <li><p>被 ref 方法包裹后的 元素 就变成了一个代理对象。</p></li> <li><p>一般而言，这里的元素参数指 基本元素 或者称之为 inner value，
+如：number, string, boolean,null,undefied 等，object 一般不使用 ref，而是使用上文的 reactive。
+也就是说 ref 一般适用于某个元素的；而 reactive 适用于一个对象。
+ref 也就相当于把单个元素转换成一个 reactive 对象了，对象默认的键值名是：value。
+<strong>ref 和 reactive区别</strong></p></li> <li><p>其实ref相当于reactive的小弟，ref背后也是通过reactive实现的，唯一的区别是ref返回的是包装对象
+const count = ref(0)  等价 const count = reactive({value:0})</p></li> <li><p>在setup函数中，如果通过结构返回ref和reactive,那么在模板渲染上下文中，获取不到他们的响应式变化。
+因为解构他们就意味着copy了他们的引用。所以尽量不要用解构去返回一个你期望响应式的数据</p></li></ul> <p><strong>vue3 computed</strong></p> <ul><li>3.0中，computed 被抽成一个API，直接从vue中获取，
+而Vue2.x中，computed是一个对象，在对象中定义一个个computed</li></ul> <p><strong>vue3 watch</strong></p> <ul><li><p>watch() API 提供了基于观察状态的变化来执行副作用的能力。</p></li> <li><p>watch(source,cb,options?)</p> <p>watch() 接收三个参数</p> <div class="language- extra-class"><pre><code>  1.第一个参数被称作 “数据源”，它可以是：
+  
+      一个返回任意值的函数
+  	
+      一个包装对象
+  	
+      一个包含上述两种数据源的数组
+  	
+      source：可以是getter函数，值包装器或包含上述两种类型的数组（如果要查看多个源）
+  	
+  2.第二个参数是回调函数。回调函数只有当数据源发生变动时才会被触发：
+  
+      callback：是类似于Vue2 watcher处理程序的函数，带有2个参数：newVal，oldVal。
+  	
+      每个参数都可以是一个数组(用于观察多个源): [newVal1，newVal2，... newValN]，[oldVal1，oldVal2，... oldValN]
+  
+  3.第三个可选参数options,
+  
+      deep 深度监听
+  	
+          类型: boolean  default :false
+          和Vue2.x行为一致，都是对对象的深度监听
+  		
+      Lazy - 和Vue2.x immediate 正好相反
+  	
+          类型:Boolean, default:false</code></pre></div></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/koa1.html" class="prev">
+        Koa
+      </a></span> <span class="next"><a href="/blog/react.html">
+        React 使用
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.9d939037.js" defer></script><script src="/assets/js/2.a9e2e0dc.js" defer></script><script src="/assets/js/27.296bb62d.js" defer></script>
+  </body>
+</html>
