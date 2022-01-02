@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TS 使用 | 前端日志</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    
+    <meta name="description" content="欢迎访问我的前端日志">
+    
+    <link rel="preload" href="/assets/css/0.styles.e1700646.css" as="style"><link rel="preload" href="/assets/js/app.a0896f0e.js" as="script"><link rel="preload" href="/assets/js/2.88eb2c00.js" as="script"><link rel="preload" href="/assets/js/29.86923448.js" as="script"><link rel="prefetch" href="/assets/js/10.d30f3d8f.js"><link rel="prefetch" href="/assets/js/11.e2b957ff.js"><link rel="prefetch" href="/assets/js/12.2da1d6bb.js"><link rel="prefetch" href="/assets/js/13.8ce2c088.js"><link rel="prefetch" href="/assets/js/14.16109f84.js"><link rel="prefetch" href="/assets/js/15.93448cfb.js"><link rel="prefetch" href="/assets/js/16.6f18825f.js"><link rel="prefetch" href="/assets/js/17.be1e4a31.js"><link rel="prefetch" href="/assets/js/18.e635c0f4.js"><link rel="prefetch" href="/assets/js/19.be17ff30.js"><link rel="prefetch" href="/assets/js/20.d142b0c9.js"><link rel="prefetch" href="/assets/js/21.e40d6d09.js"><link rel="prefetch" href="/assets/js/22.071940ae.js"><link rel="prefetch" href="/assets/js/23.99088ae7.js"><link rel="prefetch" href="/assets/js/24.670dab57.js"><link rel="prefetch" href="/assets/js/25.85694927.js"><link rel="prefetch" href="/assets/js/26.461dcdb2.js"><link rel="prefetch" href="/assets/js/27.878ab7f9.js"><link rel="prefetch" href="/assets/js/28.1fcc3f4d.js"><link rel="prefetch" href="/assets/js/3.037aac60.js"><link rel="prefetch" href="/assets/js/30.724a5ac7.js"><link rel="prefetch" href="/assets/js/31.ac601726.js"><link rel="prefetch" href="/assets/js/32.765bf8d3.js"><link rel="prefetch" href="/assets/js/33.509ffbda.js"><link rel="prefetch" href="/assets/js/34.5aa96cf1.js"><link rel="prefetch" href="/assets/js/35.f1909c5d.js"><link rel="prefetch" href="/assets/js/36.36538350.js"><link rel="prefetch" href="/assets/js/37.b9375bb3.js"><link rel="prefetch" href="/assets/js/38.193abee5.js"><link rel="prefetch" href="/assets/js/39.b584d1b5.js"><link rel="prefetch" href="/assets/js/4.a0809240.js"><link rel="prefetch" href="/assets/js/40.17832949.js"><link rel="prefetch" href="/assets/js/41.cde349a4.js"><link rel="prefetch" href="/assets/js/42.67b16448.js"><link rel="prefetch" href="/assets/js/43.1b5d99f6.js"><link rel="prefetch" href="/assets/js/44.9ecb1424.js"><link rel="prefetch" href="/assets/js/5.77c6fbd3.js"><link rel="prefetch" href="/assets/js/6.609d5ed0.js"><link rel="prefetch" href="/assets/js/7.9131668e.js"><link rel="prefetch" href="/assets/js/8.f1d4a37a.js"><link rel="prefetch" href="/assets/js/9.8be87860.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e1700646.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端日志</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">
+  博客
+</a></div><div class="nav-item"><a href="/combat/" class="nav-link">
+  实战
+</a></div><div class="nav-item"><a href="/book/" class="nav-link">
+  阅读
+</a></div><div class="nav-item"><a href="https://github.com/wumao016" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">
+  博客
+</a></div><div class="nav-item"><a href="/combat/" class="nav-link">
+  实战
+</a></div><div class="nav-item"><a href="/book/" class="nav-link">
+  阅读
+</a></div><div class="nav-item"><a href="https://github.com/wumao016" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>DevOps</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/php.html" class="sidebar-link">工具的安装</a></li><li><a href="/blog/php1.html" class="sidebar-link">PHP</a></li><li><a href="/blog/node.html" class="sidebar-link">Node.js</a></li><li><a href="/blog/webpack.html" class="sidebar-link">Webpack 使用</a></li><li><a href="/blog/gulp.html" class="sidebar-link">构建工具和脚手架</a></li><li><a href="/blog/optimization.html" class="sidebar-link">性能优化</a></li><li><a href="/blog/nginx.html" class="sidebar-link">Nginx</a></li><li><a href="/blog/engineering.html" class="sidebar-link">前端工程化</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Framework</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/express.html" class="sidebar-link">Express</a></li><li><a href="/blog/koa1.html" class="sidebar-link">Koa</a></li><li><a href="/blog/vue.html" class="sidebar-link">VUE 源码</a></li><li><a href="/blog/react.html" class="sidebar-link">React 使用</a></li><li><a href="/blog/uniapp.html" class="sidebar-link">Uni-app使用</a></li><li><a href="/blog/ts.html" aria-current="page" class="active sidebar-link">TS 使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/ts.html#ts-入门" class="sidebar-link">TS 入门</a></li><li class="sidebar-sub-header"><a href="/blog/ts.html#ts-高级技巧" class="sidebar-link">TS 高级技巧</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>CSS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/css-3d.html" class="sidebar-link">CSS使用</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>JS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/es5.html" class="sidebar-link">ES5.1</a></li><li><a href="/blog/es6.html" class="sidebar-link">ES6</a></li><li><a href="/blog/javascript-QA.html" class="sidebar-link">Javascript与QA工程师</a></li><li><a href="/blog/js.html" class="sidebar-link">JavaScript 精粹</a></li><li><a href="/blog/js-function.html" class="sidebar-link">函数式编程</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>其它</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/html.html" class="sidebar-link">同源和跨域</a></li><li><a href="/blog/http.html" class="sidebar-link">HTTP</a></li><li><a href="/blog/write.html" class="sidebar-link">手写函数</a></li><li><a href="/blog/test.html" class="sidebar-link">习题总结</a></li><li><a href="/blog/arithmetic.html" class="sidebar-link">算法</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="ts-使用"><a href="#ts-使用" class="header-anchor">#</a> TS 使用</h1> <h2 id="ts-入门"><a href="#ts-入门" class="header-anchor">#</a> TS 入门</h2> <p><strong>TypeScript简介</strong></p> <p>TypeScript是微软开发的JavaScript的超集，TypeScript兼容JavaScript，
+可以载入JavaScript代码然后运行。</p> <p><strong>TypeScript与JavaScript比较</strong></p> <p>TypeScript与JavaScript相比进步的地方 包括：加入注释，让编译器理解所支持的对象和函数，编译器
+会移除注释，不会增加开销；增加一个完整的类结构，使之更像是传统的面向对象语言。</p> <p><strong>语法特性</strong></p> <ul><li>类 Classes</li> <li>接口 Interfaces</li> <li>模块 Modules</li></ul> <p><strong>安装</strong></p> <div class="language- extra-class"><pre><code>npm install -g typrscript
+</code></pre></div><p><strong>编译</strong></p> <div class="language- extra-class"><pre><code>tsc xxx.ts
+</code></pre></div><p><strong>基本数据类型</strong></p> <ul><li><p>boolean</p> <p>var isDone:boolean=false;</p></li> <li><p>number</p> <p>var isDone:number=111;</p></li> <li><p>string</p> <p>var isDone:string=&quot;ddd&quot;;</p></li> <li><p>array</p></li></ul> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>	var isDone<span class="token punctuation">:</span>number<span class="token punctuation">[</span><span class="token punctuation">]</span>=<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span>;
+	var isDone<span class="token punctuation">:</span>Array&lt;number<span class="token punctuation">&gt;</span>=<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span>;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>enum 枚举</li></ul> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>	enum Color <span class="token punctuation">{</span>Red=1<span class="token punctuation">,</span>Green=2<span class="token punctuation">,</span>Blue=3<span class="token punctuation">}</span>;
+	var isDone<span class="token punctuation">:</span>string=Color<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>;
+	<span class="token punctuation">-</span><span class="token punctuation">&gt;</span>Green
+	var c<span class="token punctuation">:</span>Color=Color.Green;
+	<span class="token punctuation">-</span><span class="token punctuation">&gt;</span>2 输出索引
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>any</li></ul> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>	var isDone<span class="token punctuation">:</span>any=&quot;ddd&quot;;
+	var isDone<span class="token punctuation">:</span>any=1;
+	var isDone<span class="token punctuation">:</span>any<span class="token punctuation">[</span><span class="token punctuation">]</span>=<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">&quot;ddd&quot;</span><span class="token punctuation">,</span><span class="token boolean important">false</span><span class="token punctuation">]</span>;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>void 函数，不需要返回值</li></ul> <p><strong>函数</strong></p> <div class="language- extra-class"><pre><code>function greeter(fn: (a: string) =&gt; void) {
+  fn(&quot;Hello, World&quot;);
+}
+//或者是类型别名
+type GreetFunction = (a: string) =&gt; void;
+function greeter(fn: GreetFunction) {
+  // ...
+}
+</code></pre></div><p><strong>类</strong></p> <div class="language- extra-class"><pre><code>//继承
+class Base {
+	n:number;
+  greet() {
+    console.log(&quot;Hello, world!&quot;);
+  }
+}
+class Derived extends Base {
+  greet(name?: string) {
+    if (name === undefined) {
+      super.greet();
+    } else {
+      console.log(`Hello, ${name.toUpperCase()}`);
+    }
+  }
+}
+const d = new Derived();
+d.greet();
+d.greet(&quot;reader&quot;);
+
+//封装
+class Base {
+	private n:number;
+	greet() {
+		return this.n;
+	}
+	get age():number{
+		return this.n;
+	}
+	set age(newage:number){
+		this.n=newage;
+	}
+}
+const b = new Base();
+b.age=10;
+alert(b.greet()) //10
+
+//静态成员
+class MyClass {
+  static x = 0;
+  static printX() {
+    console.log(MyClass.x);//必须是MyClass
+  }
+}
+console.log(MyClass.x);
+MyClass.printX();
+</code></pre></div><p><strong>接口</strong></p> <div class="language- extra-class"><pre><code>//规范了当前函数的类型	
+interface Person {
+  name: string;
+  age: number;
+  xPos?: number;//可选属性
+}
+function greet(person: Person) {
+  return &quot;Hello &quot; + person.name;
+}
+const shape = { name:&quot;1&quot;,age:1,xPos: 100 };
+const shape = { name:&quot;1&quot;,age:1};
+greet(shape);
+
+//规范了数组的类型
+interface Person {
+	[index:number]:string;
+}
+const myArray:Person;
+myArray: string[] = [&quot;hello&quot;, &quot;world&quot;];
+alert(myArray[1])
+
+//实现接口
+interfaces Datetime{
+	currentTime:Date;
+	setTime(d:Date);
+}
+class Clock implements Datetime{
+	currentTime:Date;
+	setTime(d:Date){
+		this.currentTime=d;
+	}
+	constructor(h:number,m:number){
+		
+	}
+}
+
+//接口继承
+interfaces Shape{
+	color:string;
+}
+interfaces PenStroke{
+	penwidth:number;
+}
+class Square extends Shape,PenStroke{
+	sidelength:number
+}
+var s=&lt;Square&gt;{};
+s.color=&quot;blue&quot;;
+s.penwidth=1;
+s.sidelength=1;
+
+//混合类型
+interfaces Counter{
+	color:number;
+	reset():void;
+	(start:number):string;
+}
+const c:Counter;
+c(10);
+c.reset();
+</code></pre></div><p><strong>泛型</strong></p> <div class="language- extra-class"><pre><code>//泛型类型
+function identity&lt;Type&gt;(arg: Type): Type {
+  return arg;
+}
+let myIdentity: &lt;Type&gt;(arg: Type) =&gt; Type = identity;
+
+//接口
+interface GenericIdentityFn &lt;Type&gt;{
+  (arg: Type): Type;
+}	
+function identity&lt;Type&gt;(arg: Type): Type {
+  return arg;
+}	
+let myIdentity: GenericIdentityFn&lt;number&gt; = identity;
+</code></pre></div><p><strong>模块</strong></p> <div class="language- extra-class"><pre><code>module Time{
+//泛型类型
+export interface StringValidator {
+  isAcceptable(s: string): boolean;
+}
+export const numberRegexp = /^[0-9]+$/;
+export class ZipCodeValidator implements StringValidator {
+  isAcceptable(s: string) {
+	return s.length === 5 &amp;&amp; numberRegexp.test(s);
+  }
+}
+}
+
+module Time{
+//泛型类
+export class Test {
+  element:HTMLElement;
+  span:HTMLElement;
+  timer:number;
+  constructor(e:HTMLElement){
+	  this.element=e;
+	  this.element.innerHTML=&quot;现在时间&quot;;
+	  this.span=document.createElement(&quot;span&quot;);
+	  this.element.appendChild(this.span);
+	  this.span.innerHTML=new Date().toTimeString();
+  }
+  start(){
+	  this.timer=setInterval(()=&gt;this.span.innerHTML=new Date(),500)
+  }
+  stop(){
+	  clearTimeout(this.timer)
+  }
+}
+}
+
+//应用部分js
+var div=document.createElement(&quot;div&quot;);
+document.body.appendChild(div);
+var obj=new Time.Test(div);
+var button=document.createElement(&quot;button&quot;);
+button.innerHTML=&quot;start&quot;;
+button.onclick=function(){
+	obj.start();
+}
+document.body.appendChild(button);
+var buttons=document.createElement(&quot;button&quot;);
+buttons.innerHTML=&quot;stop&quot;;
+buttons.onclick=function(){
+	obj.stop();
+}
+document.body.appendChild(buttons);
+</code></pre></div><p><strong>装饰器</strong></p> <p>装饰器提供了一种为类声明和成员添加注释和元编程语法的方法。特殊种类的声明可被附连到一个类声明，方法，访问器，属性，或参数。</p> <p><code>用法</code>
+tsc xxx.ts --target ES5 --experimentalDecorators</p> <ul><li>类装饰器 类装饰器应用于类的构造函数，可用于观察、修改或替换类定义。
+<ul><li>装饰类的构造函数作为其唯一参数。</li></ul></li> <li>方法装饰器 装饰器应用于方法的属性描述符，可用于观察、修改或替换方法定义。
+<ul><li>三个参数：</li> <li>静态成员的类的构造函数，或实例成员的类的原型。</li> <li>成员的姓名。</li> <li>成员的属性描述符。</li></ul></li> <li>访问器装饰器 访问器装饰器应用于访问器的属性描述符，可用于观察、修改或替换访问器的定义。
+<ul><li>三个参数：</li> <li>静态成员的类的构造函数，或实例成员的类的原型。</li> <li>成员的姓名。</li> <li>成员的属性描述符。</li></ul></li> <li>属性装饰器
+<ul><li>两个参数：</li> <li>静态成员的类的构造函数，或实例成员的类的原型。</li> <li>成员的姓名。</li></ul></li> <li>参数装饰器 参数装饰器应用于类构造函数或方法声明的函数。
+<ul><li>三个参数：</li> <li>静态成员的类的构造函数，或实例成员的类的原型。</li> <li>成员的姓名。</li> <li>函数参数列表中参数的序数索引</li></ul></li></ul> <p><strong>Mixin</strong></p> <p>用于类继承</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>class Jumpable <span class="token punctuation">{</span>
+  jump() <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+class Duckable <span class="token punctuation">{</span>
+  duck() <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+class Sprite <span class="token punctuation">{</span>
+  x = 0;
+  y = 0;
+<span class="token punctuation">}</span>
+interface Sprite extends Jumpable<span class="token punctuation">,</span> Duckable <span class="token punctuation">{</span><span class="token punctuation">}</span>
+applyMixins(Sprite<span class="token punctuation">,</span> <span class="token punctuation">[</span>Jumpable<span class="token punctuation">,</span> Duckable<span class="token punctuation">]</span>);
+
+let player = new Sprite();
+player.jump();
+console.log(player.x<span class="token punctuation">,</span> player.y);
+
+<span class="token key atrule">// This can live anywhere in your codebase</span><span class="token punctuation">:</span>
+<span class="token key atrule">function applyMixins(derivedCtor</span><span class="token punctuation">:</span> any<span class="token punctuation">,</span> <span class="token key atrule">constructors</span><span class="token punctuation">:</span> any<span class="token punctuation">[</span><span class="token punctuation">]</span>) <span class="token punctuation">{</span>
+  constructors.forEach((baseCtor) =<span class="token punctuation">&gt;</span> <span class="token punctuation">{</span>
+    Object.getOwnPropertyNames(baseCtor.prototype).forEach((name) =<span class="token punctuation">&gt;</span> <span class="token punctuation">{</span>
+      Object.defineProperty(
+        derivedCtor.prototype<span class="token punctuation">,</span>
+        name<span class="token punctuation">,</span>
+        Object.getOwnPropertyDescriptor(baseCtor.prototype<span class="token punctuation">,</span> name) <span class="token punctuation">|</span><span class="token punctuation">|</span>
+          Object.create(null)
+      );
+    <span class="token punctuation">}</span>);
+  <span class="token punctuation">}</span>);
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><h2 id="ts-高级技巧"><a href="#ts-高级技巧" class="header-anchor">#</a> TS 高级技巧</h2></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/uniapp.html" class="prev">
+        Uni-app使用
+      </a></span> <span class="next"><a href="/blog/css-3d.html">
+        CSS使用
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a0896f0e.js" defer></script><script src="/assets/js/2.88eb2c00.js" defer></script><script src="/assets/js/29.86923448.js" defer></script>
+  </body>
+</html>

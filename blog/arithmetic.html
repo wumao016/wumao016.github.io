@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>算法 | 前端日志</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    
+    <meta name="description" content="欢迎访问我的前端日志">
+    
+    <link rel="preload" href="/assets/css/0.styles.e1700646.css" as="style"><link rel="preload" href="/assets/js/app.a0896f0e.js" as="script"><link rel="preload" href="/assets/js/2.88eb2c00.js" as="script"><link rel="preload" href="/assets/js/9.8be87860.js" as="script"><link rel="prefetch" href="/assets/js/10.d30f3d8f.js"><link rel="prefetch" href="/assets/js/11.e2b957ff.js"><link rel="prefetch" href="/assets/js/12.2da1d6bb.js"><link rel="prefetch" href="/assets/js/13.8ce2c088.js"><link rel="prefetch" href="/assets/js/14.16109f84.js"><link rel="prefetch" href="/assets/js/15.93448cfb.js"><link rel="prefetch" href="/assets/js/16.6f18825f.js"><link rel="prefetch" href="/assets/js/17.be1e4a31.js"><link rel="prefetch" href="/assets/js/18.e635c0f4.js"><link rel="prefetch" href="/assets/js/19.be17ff30.js"><link rel="prefetch" href="/assets/js/20.d142b0c9.js"><link rel="prefetch" href="/assets/js/21.e40d6d09.js"><link rel="prefetch" href="/assets/js/22.071940ae.js"><link rel="prefetch" href="/assets/js/23.99088ae7.js"><link rel="prefetch" href="/assets/js/24.670dab57.js"><link rel="prefetch" href="/assets/js/25.85694927.js"><link rel="prefetch" href="/assets/js/26.461dcdb2.js"><link rel="prefetch" href="/assets/js/27.878ab7f9.js"><link rel="prefetch" href="/assets/js/28.1fcc3f4d.js"><link rel="prefetch" href="/assets/js/29.86923448.js"><link rel="prefetch" href="/assets/js/3.037aac60.js"><link rel="prefetch" href="/assets/js/30.724a5ac7.js"><link rel="prefetch" href="/assets/js/31.ac601726.js"><link rel="prefetch" href="/assets/js/32.765bf8d3.js"><link rel="prefetch" href="/assets/js/33.509ffbda.js"><link rel="prefetch" href="/assets/js/34.5aa96cf1.js"><link rel="prefetch" href="/assets/js/35.f1909c5d.js"><link rel="prefetch" href="/assets/js/36.36538350.js"><link rel="prefetch" href="/assets/js/37.b9375bb3.js"><link rel="prefetch" href="/assets/js/38.193abee5.js"><link rel="prefetch" href="/assets/js/39.b584d1b5.js"><link rel="prefetch" href="/assets/js/4.a0809240.js"><link rel="prefetch" href="/assets/js/40.17832949.js"><link rel="prefetch" href="/assets/js/41.cde349a4.js"><link rel="prefetch" href="/assets/js/42.67b16448.js"><link rel="prefetch" href="/assets/js/43.1b5d99f6.js"><link rel="prefetch" href="/assets/js/44.9ecb1424.js"><link rel="prefetch" href="/assets/js/5.77c6fbd3.js"><link rel="prefetch" href="/assets/js/6.609d5ed0.js"><link rel="prefetch" href="/assets/js/7.9131668e.js"><link rel="prefetch" href="/assets/js/8.f1d4a37a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e1700646.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端日志</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">
+  博客
+</a></div><div class="nav-item"><a href="/combat/" class="nav-link">
+  实战
+</a></div><div class="nav-item"><a href="/book/" class="nav-link">
+  阅读
+</a></div><div class="nav-item"><a href="https://github.com/wumao016" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">
+  博客
+</a></div><div class="nav-item"><a href="/combat/" class="nav-link">
+  实战
+</a></div><div class="nav-item"><a href="/book/" class="nav-link">
+  阅读
+</a></div><div class="nav-item"><a href="https://github.com/wumao016" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>DevOps</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/php.html" class="sidebar-link">工具的安装</a></li><li><a href="/blog/php1.html" class="sidebar-link">PHP</a></li><li><a href="/blog/node.html" class="sidebar-link">Node.js</a></li><li><a href="/blog/webpack.html" class="sidebar-link">Webpack 使用</a></li><li><a href="/blog/gulp.html" class="sidebar-link">构建工具和脚手架</a></li><li><a href="/blog/optimization.html" class="sidebar-link">性能优化</a></li><li><a href="/blog/nginx.html" class="sidebar-link">Nginx</a></li><li><a href="/blog/engineering.html" class="sidebar-link">前端工程化</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Framework</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/express.html" class="sidebar-link">Express</a></li><li><a href="/blog/koa1.html" class="sidebar-link">Koa</a></li><li><a href="/blog/vue.html" class="sidebar-link">VUE 源码</a></li><li><a href="/blog/react.html" class="sidebar-link">React 使用</a></li><li><a href="/blog/uniapp.html" class="sidebar-link">Uni-app使用</a></li><li><a href="/blog/ts.html" class="sidebar-link">TS 使用</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>CSS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/css-3d.html" class="sidebar-link">CSS使用</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>JS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/es5.html" class="sidebar-link">ES5.1</a></li><li><a href="/blog/es6.html" class="sidebar-link">ES6</a></li><li><a href="/blog/javascript-QA.html" class="sidebar-link">Javascript与QA工程师</a></li><li><a href="/blog/js.html" class="sidebar-link">JavaScript 精粹</a></li><li><a href="/blog/js-function.html" class="sidebar-link">函数式编程</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>其它</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/html.html" class="sidebar-link">同源和跨域</a></li><li><a href="/blog/http.html" class="sidebar-link">HTTP</a></li><li><a href="/blog/write.html" class="sidebar-link">手写函数</a></li><li><a href="/blog/test.html" class="sidebar-link">习题总结</a></li><li><a href="/blog/arithmetic.html" aria-current="page" class="active sidebar-link">算法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/arithmetic.html#数据结构" class="sidebar-link">数据结构</a></li><li class="sidebar-sub-header"><a href="/blog/arithmetic.html#算法-2" class="sidebar-link">算法</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="算法"><a href="#算法" class="header-anchor">#</a> 算法</h1> <h2 id="数据结构"><a href="#数据结构" class="header-anchor">#</a> 数据结构</h2> <h3 id="概论"><a href="#概论" class="header-anchor">#</a> 概论</h3> <p>数据元素相互之间的关系称为结构。数据结构与算法紧密结合。</p> <ul><li>逻辑结构：反映数据元素之间的逻辑关系。</li> <li>存储结构：数据结构在计算机中的表示。</li> <li>算法：对数据的操作
+<img src="arit_1.png" alt="结构"></li></ul> <h3 id="列表"><a href="#列表" class="header-anchor">#</a> 列表</h3> <ul><li>元素不是很多</li> <li>不需要很长序列查找元素或者排序</li> <li>列表是一种最自然的数据组织方式</li> <li>列表是一组有序的数据。每个列表中的数据项称为元素。元素的数量受内存控制。不包含任何元素的列表称为空列表。</li></ul> <p><strong>定义</strong></p> <ul><li>访问元素时不必关心底层数据结构。</li> <li>增加和删除元素要比for更加灵活。</li> <li>迭代器访问列表里的元素提供了统一的方法。</li></ul> <h3 id="栈"><a href="#栈" class="header-anchor">#</a> 栈</h3> <ul><li>栈是一种特殊的列表</li> <li>栈是一种高效的数据结构，因为数据只能在栈顶删除或添加，操作很快。</li> <li>栈的使用遍布程序语言实现方方面面，从表达式求值到处理函数调用。</li></ul> <p><strong>定义</strong></p> <ul><li>栈内元素只能通过列表的一端访问，这一端成为栈顶</li> <li>栈被称为一种后入先出的数据结构</li> <li>插入新元素又称作进栈、入栈或压栈，从一个栈删除元素又称作出栈或退栈</li></ul> <h3 id="队列"><a href="#队列" class="header-anchor">#</a> 队列</h3> <ul><li>队列是一种特殊的列表</li> <li>队列只能在队尾插入元素，在队首删除元素</li> <li>队列是一种先进先出的数据结构</li> <li>插入新元素称作入队，删除操作叫做出队。</li> <li>有一些特殊情况，在删除元素不必遵守先进先出，通过修改队列元素顺序实现。</li></ul> <h3 id="链表"><a href="#链表" class="header-anchor">#</a> 链表</h3> <ul><li>数组不是组织数据最佳结构</li> <li>js的数据被实现成了对象，与其他语言数组相比，效率低了很多</li> <li>如果数组实际使用时很慢，就可以考虑链表代替他。除了对数据的随机访问，链表几乎可以用于任何可以使用一维数组的地方</li></ul> <p><strong>定义</strong></p> <ul><li>链表是由一系列节点组成的集合，每个节点都使用一个对象的引用指向它的后续，指向另一个节点的引用叫链</li> <li>链表元素靠相互之间的关系进行引用A-》B-》C，B并不是链表的第二个元素而是B跟在A后面，遍历链表就是跟着链接，从链接的首元素一直到尾元素，但不包含头节点，头元素常常被称为链表的接入点。（链表的尾元素指向一个null节点）</li> <li>向单向链表插入一个节点，需要修改它前面的节点（前驱）使其指向新加入的节点，而新加入的节点则指向原来前驱指向的节点。</li> <li>向单向链表删除一个节点，需要将待删除的元素的前驱节点指向待删除元素的后续节点，同时将删除元素指向null。</li></ul> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>//双向链表
+function Node(element)<span class="token punctuation">{</span>
+	this.element=element;
+	this.next=null;
+	this.previous=null;
+<span class="token punctuation">}</span>
+function List()<span class="token punctuation">{</span>
+	this.head=new Node(&quot;head&quot;);
+	this.find=find;
+	this.insert=insert;
+	this.display=display;
+	this.remove=remove;
+	this.findList=findList;
+	this.disReverse=disReverse;
+<span class="token punctuation">}</span>
+function find(item)<span class="token punctuation">{</span>
+	var currNode=this.head;
+	while(currNode.element<span class="token tag">!=item)</span><span class="token punctuation">{</span>
+		currNode=currNode.next;
+	<span class="token punctuation">}</span>
+	return currNode;
+<span class="token punctuation">}</span>
+function insert(newElement<span class="token punctuation">,</span>item)<span class="token punctuation">{</span>
+	var newNode=new Node(newElement);
+	var current=this.find(item);
+	newNode.next=current.next;
+	newNode.previous=current;
+	current.next=newNode;
+	if(<span class="token tag">!(newNode.next==null))</span><span class="token punctuation">{</span>
+		newNode.next.previous=newNode;
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+function display()<span class="token punctuation">{</span>
+	var currNode=this.head;
+	while(currNode.next<span class="token tag">!=null)</span><span class="token punctuation">{</span>
+		console.log(currNode.next.element);
+		currNode=currNode.next
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+function remove(item)<span class="token punctuation">{</span>
+	var currNode=this.find(item);
+	if(<span class="token tag">!(currNode.next==null))</span><span class="token punctuation">{</span>
+		currNode.previous.next=currNode.next;
+		currNode.next.previous=currNode.previous;
+		currNode.next=null;
+		currNode.previous=null;
+	<span class="token punctuation">}</span>else<span class="token punctuation">{</span>
+		currNode.previous.next=null;
+		currNode.previous=null;
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+function findList()<span class="token punctuation">{</span>
+	var currNode=this.head;
+	while(<span class="token tag">!(currNode.next==null))</span><span class="token punctuation">{</span>
+		currNode=currNode.next;
+	<span class="token punctuation">}</span>
+	return currNode;
+<span class="token punctuation">}</span>
+function disReverse()<span class="token punctuation">{</span>
+	var currNode=this.findList();
+	while(<span class="token tag">!(currNode.previous==null))</span><span class="token punctuation">{</span>
+		console.log(currNode.element);
+		currNode=currNode.previous;
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+var cit=new List();
+cit.insert(&quot;first&quot;<span class="token punctuation">,</span>&quot;head&quot;);
+cit.insert(&quot;second&quot;<span class="token punctuation">,</span>&quot;first&quot;);
+cit.insert(&quot;three&quot;<span class="token punctuation">,</span>&quot;second&quot;);
+cit.display();
+cit.remove(&quot;second&quot;)
+cit.display();
+cit.disReverse();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br></div></div><h3 id="字典"><a href="#字典" class="header-anchor">#</a> 字典</h3> <ul><li>字典以一种键值对形式存储的(key-&gt;value)</li> <li>js中的Object类就是以字典的形式设计的。我们要实现一个Dictionary类，这样会比Object方便比如显示字典中的所有元素，对属性进行排序等。</li></ul> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code> function Dictionary()<span class="token punctuation">{</span>
+	 this.datastore=new Array();
+	 this.add=add;
+	 this.find=find;
+	 this.remove=remove;
+	 this.showAll=showAll;
+	 this.count=count;
+	 this.clear=clear;
+ <span class="token punctuation">}</span>
+ function add(key<span class="token punctuation">,</span>value)<span class="token punctuation">{</span>
+	 this.datastore<span class="token punctuation">[</span>key<span class="token punctuation">]</span>=value;
+ <span class="token punctuation">}</span>
+ function find(key)<span class="token punctuation">{</span>
+	return this.datastore<span class="token punctuation">[</span>key<span class="token punctuation">]</span>;
+ <span class="token punctuation">}</span>
+ function remove(key)<span class="token punctuation">{</span>
+	delete this.datastore<span class="token punctuation">[</span>key<span class="token punctuation">]</span>
+ <span class="token punctuation">}</span>
+ function showAll()<span class="token punctuation">{</span>
+	var datakeys=Object.keys(this.datastore).sort();
+	for(var keys in datakeys)<span class="token punctuation">{</span>
+		console.log(datakeys<span class="token punctuation">[</span>keys<span class="token punctuation">]</span>+&quot;<span class="token punctuation">-</span><span class="token punctuation">-</span><span class="token punctuation">&gt;</span>&quot;+this.datastore<span class="token punctuation">[</span>datakeys<span class="token punctuation">[</span>keys<span class="token punctuation">]</span><span class="token punctuation">]</span>)
+	<span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+ function count()<span class="token punctuation">{</span>
+	 return Object.keys(this.datastore).length;
+ <span class="token punctuation">}</span>
+ function clear()<span class="token punctuation">{</span>
+	 var datakeys=Object.keys(this.datastore)
+	 for(var keys in datakeys)<span class="token punctuation">{</span>
+	 	delete this.datastore<span class="token punctuation">[</span>datakeys<span class="token punctuation">[</span>keys<span class="token punctuation">]</span><span class="token punctuation">]</span>;
+	 <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+ var pbook=new Dictionary();
+ pbook.add(&quot;first&quot;<span class="token punctuation">,</span>111);
+ pbook.add(&quot;second&quot;<span class="token punctuation">,</span>222);
+ console.log(&quot;查找出&quot;<span class="token punctuation">,</span>pbook.find(&quot;second&quot;))
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><h3 id="散列"><a href="#散列" class="header-anchor">#</a> 散列</h3> <ul><li>散列后的数据可以快速插入取用</li> <li>在散列表上插入、删除和取用数据非常快，但是查找数据却效率低下，比如查找一组数据中的最大值和最小值</li> <li>js散列表基于数组设计，理想情况散列函数会将每一个键值映射为唯一的数组索引，数组长度有限制，更现实的策略是将键均匀分布。</li></ul> <p><strong>概念</strong></p> <ul><li>数组长度是预先设定的，可以随时增加，所有元素根据和该元素对应的键，保存数组特定位置。</li> <li>即使使用高效的散列函数，仍然存在两个键值相同的情况，这种现象称为碰撞</li> <li>数组的长度应该是一个质数，所有的策略都基于碰撞</li> <li>开链法：两个键相同保存位置一样，开辟第二数组，也称第二个数组为链</li> <li>线性探测法属于开放寻址散列，查找散列位置如果当前位置没有继续寻找下一个位置。存储数据较大较合适。数组大小 &gt;=1.5<em>数据（开链法)，数组大小 &gt;=2</em>数据（线性探测法)</li></ul> <h3 id="集合"><a href="#集合" class="header-anchor">#</a> 集合</h3> <ul><li>集合是一种包含不同元素数据结构</li> <li>在很多编程语言中并不把集合当成一种数据类型，当你想要创建一个数据结构，用来保存一段独一无二的文字的时候集合就非常有用。</li> <li>集合的成员是无序的</li> <li>集合中不允许相同成员存在</li></ul> <p><strong>概念</strong></p> <ul><li>集合是一组无序但彼此之间又有一定相关性的成员构成的，集合中的元素称为成员</li> <li>不包含任何成员的集合成为空集，全集则是包含一切可能成员的集合</li> <li>如果两个集合的成员完全相同，则称两个集合相等</li> <li>如果一个集合中的所有成员都属于另位一个集合，则前一集合成为后一集合的子集</li> <li>并集：将两个集合中的成员进行合并，得到一个新集合</li> <li>交集：两个集合中共同存在的成员组成一个新的集合</li> <li>补集：属于一个集合不属于另一个集合的成员组成的集合</li></ul> <h3 id="二叉树"><a href="#二叉树" class="header-anchor">#</a> 二叉树</h3> <ul><li>树是一种非线性的数据结构，分层存储</li> <li>树是用来存储具有层级关系的数据，还被用来存储有序列表</li> <li>二叉树进行查找特别快，为二叉树添加或删除元素也特别快</li> <li>集合中不允许相同成员存在</li></ul> <p><strong>定义</strong></p> <ul><li>树由一组以边连接的节点组成</li> <li>一棵树最上面的节点称为根节点，如果一个节点下面连接多个节点，那么该节点称为父节点，它下面的节点被称为子节点。一个节点可以有0个、1个或多个子节点。没有任何子节点的节点称为叶子节点</li> <li>二叉树是一种特殊的树，子节点个数不超过两个</li> <li>从一个节点走到另一个节点的这一组边称为路径</li> <li>以某种特定顺序访问书中的所有节点称为树的遍历。前序是根-》左-》右，后序是左-》右-》根，中序是左-》根-》右</li> <li>树分为几个层次，根节点是第0层，它的子节点是1层，以此类推。我们定义树的层数就是树的深度</li> <li>每个节点都有一个与之相关的值，该值有时被称为键</li> <li>一个父节点的两个子节点分别称为左节点和右节点。二叉查找树是一种特别的二叉树，相对较小的值保存在左节点，较大的值保存在右节点，这一特性使得查找效率很高</li></ul> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>function Node(data<span class="token punctuation">,</span>left<span class="token punctuation">,</span>right)<span class="token punctuation">{</span>
+	this.data=data;
+	this.left=left;
+	this.right=right;
+	this.show=show;
+<span class="token punctuation">}</span>
+function show()<span class="token punctuation">{</span>
+	return this.data
+<span class="token punctuation">}</span>
+function BST()<span class="token punctuation">{</span>
+	this.root=null;
+	this.insert=insert;
+	this.inOrder=inOrder;
+	this.getSmall=getSmall;
+	this.getMax=getMax;
+	this.remove=remove;
+<span class="token punctuation">}</span>
+function insert(data)<span class="token punctuation">{</span>
+	var n=new Node(data<span class="token punctuation">,</span><span class="token null important">null</span><span class="token punctuation">,</span>null);
+	if(this.root==null)<span class="token punctuation">{</span>
+		this.root=n
+	<span class="token punctuation">}</span>else<span class="token punctuation">{</span>
+		var current=this.root;
+		var parent;
+		while(true)<span class="token punctuation">{</span>
+			parent=current;
+			if(data&lt;current.data)<span class="token punctuation">{</span>
+				current=current.left;
+				if(current==null)<span class="token punctuation">{</span>
+					parent.left=n;
+					break;
+				<span class="token punctuation">}</span>
+			<span class="token punctuation">}</span>else<span class="token punctuation">{</span>
+				current=current.right;
+				if(current==null)<span class="token punctuation">{</span>
+					parent.right=n;
+					break;
+				<span class="token punctuation">}</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+function inOrder(node)<span class="token punctuation">{</span>
+	if(<span class="token tag">!(node==null))</span><span class="token punctuation">{</span>
+		inOrder(node.left);
+		console.log(node.data)
+		inOrder(node.right);
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+function getSmall(root)<span class="token punctuation">{</span>
+	var current=this.root<span class="token punctuation">|</span><span class="token punctuation">|</span>root;
+	while(<span class="token tag">!(current.left==null))</span><span class="token punctuation">{</span>
+		current=current.left
+	<span class="token punctuation">}</span>
+	return current
+<span class="token punctuation">}</span>
+function getMax(root)<span class="token punctuation">{</span>
+	var current=this.root<span class="token punctuation">|</span><span class="token punctuation">|</span>root;
+	while(<span class="token tag">!(current.right==null))</span><span class="token punctuation">{</span>
+		current=current.right
+	<span class="token punctuation">}</span>
+	return current.data
+<span class="token punctuation">}</span>
+function find(data)<span class="token punctuation">{</span>
+	var current=this.root;
+	while(current<span class="token tag">!=null)</span><span class="token punctuation">{</span>
+		if(current.data==data)<span class="token punctuation">{</span>
+			return current;
+		<span class="token punctuation">}</span>else if(data&lt;current.data)<span class="token punctuation">{</span>
+			current=current.left;
+		<span class="token punctuation">}</span>else<span class="token punctuation">{</span>
+			current=current.right;
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+	return null
+<span class="token punctuation">}</span>
+function remove(data)<span class="token punctuation">{</span>
+	removeNode(this.root<span class="token punctuation">,</span>data)
+<span class="token punctuation">}</span>
+function removeNode(node<span class="token punctuation">,</span>data)<span class="token punctuation">{</span>
+	if(node==null)<span class="token punctuation">{</span>
+		return null
+	<span class="token punctuation">}</span>
+	if(data==node.data)<span class="token punctuation">{</span>
+		if(node.left==null<span class="token important">&amp;&amp;node.right==null)</span><span class="token punctuation">{</span>
+			return null
+		<span class="token punctuation">}</span>
+		if(node.left==null)<span class="token punctuation">{</span>
+			return node.right
+		<span class="token punctuation">}</span>
+		if(node.right==null)<span class="token punctuation">{</span>
+			return node.left
+		<span class="token punctuation">}</span>
+		var tempNode=getSmall(node.right)
+		node.data=tempNode.data;
+		node.right=removeNode(node.right<span class="token punctuation">,</span>tempNode.data);
+		return node
+	<span class="token punctuation">}</span>else if(data&lt;node.data)<span class="token punctuation">{</span>
+		node.left=removeNode(node.left<span class="token punctuation">,</span>data)
+		return node;
+	<span class="token punctuation">}</span>else<span class="token punctuation">{</span>
+		node.right=removeNode(node.right<span class="token punctuation">,</span>data)
+		return node;
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+var nums=new BST();
+nums.insert(23);
+nums.insert(13);
+nums.insert(22);
+nums.insert(27);
+nums.insert(33);
+nums.inOrder(nums.root);//中序
+nums.remove(13);
+nums.inOrder(nums.root)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br></div></div><h3 id="图"><a href="#图" class="header-anchor">#</a> 图</h3> <p><strong>定义</strong></p> <ul><li>图由边的集合及定点的集合组成。地图中，每一个城市就是一个顶点，每一条道路就是一个边</li> <li>顶点也有权重，也称为成本。如果一个图的顶点是有序的，则称为有向图。在对有向图的顶点排序后，便可以在两个顶点之间绘制一个箭头。有向图表明了顶点的流向。流程图就是一个有向图的例子。</li> <li>如果图是无序的，则称之为无序图或无向图</li> <li>从一个节点走到另一个节点的这一组边称为路径。路径中所有的顶点都由边连接。路径的长度用路径中第一个顶点到最后一个顶点之间的变的数量表示。指向自身的顶点组成的路径成为环，环的长度为0</li> <li>圈是至少有一条边的路径，且路径的第一个顶点和最后一个顶点相同。无论有向图还是无向图只要是没有重复的顶点的圈就是一个简单图，除了第一个和最后一个顶点以外，路径的其他顶点有重复的圈称为平凡圈</li> <li>如果两个顶点之间有路径，那么这两个顶点之间就是强连通的。如果有向图的所有顶点都是强连通的，那么这个有向图也是强连通的</li></ul> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>function Graph(v)<span class="token punctuation">{</span>
+	this.vertices=v;
+	this.edges=0;
+	this.adj=<span class="token punctuation">[</span><span class="token punctuation">]</span>;
+	this.marked=<span class="token punctuation">[</span><span class="token punctuation">]</span>;
+	for(var i=0;i&lt;this.vertices;i++)<span class="token punctuation">{</span>
+		this.adj<span class="token punctuation">[</span>i<span class="token punctuation">]</span>=<span class="token punctuation">[</span><span class="token punctuation">]</span>;
+		this.marked<span class="token punctuation">[</span>i<span class="token punctuation">]</span>=false;
+	<span class="token punctuation">}</span>
+	this.addEdge=addEdge;
+	this.showGraph=showGraph;
+	this.dfs=dfs;
+	this.bfs=bfs;
+	this.edgeTo=<span class="token punctuation">[</span><span class="token punctuation">]</span>;//最短路径
+	this.hasPathTo=hasPathTo;
+	this.PathTo=PathTo;
+<span class="token punctuation">}</span>
+function addEdge(v<span class="token punctuation">,</span>w)<span class="token punctuation">{</span>
+	this.adj<span class="token punctuation">[</span>v<span class="token punctuation">]</span>.push(w);
+	this.adj<span class="token punctuation">[</span>w<span class="token punctuation">]</span>.push(v);
+	this.edges++
+<span class="token punctuation">}</span>
+function showGraph()<span class="token punctuation">{</span>
+	for(var i=0;i&lt;this.vertices;i++)<span class="token punctuation">{</span>
+		var edges='';
+		for(var j=0;j&lt;this.vertices;j++)<span class="token punctuation">{</span>
+			if(this.adj<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span>)<span class="token punctuation">{</span>
+				edges+=this.adj<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span>+''
+			<span class="token punctuation">}</span>	
+		<span class="token punctuation">}</span>
+		console.log(i+'<span class="token punctuation">-</span><span class="token punctuation">&gt;</span>'+edges)
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+//深度优先
+function dfs(v)<span class="token punctuation">{</span>
+	this.marked<span class="token punctuation">[</span>v<span class="token punctuation">]</span>=true;
+	if(this.adj<span class="token punctuation">[</span>v<span class="token punctuation">]</span><span class="token tag">!=undefined)</span><span class="token punctuation">{</span>
+		console.log(v+'节点已经被访问')
+	<span class="token punctuation">}</span>
+	for(var w in this.adj<span class="token punctuation">[</span>v<span class="token punctuation">]</span>)<span class="token punctuation">{</span>
+		var current=this.adj<span class="token punctuation">[</span>v<span class="token punctuation">]</span><span class="token punctuation">[</span>w<span class="token punctuation">]</span>;
+		if(<span class="token tag">!this.marked</span><span class="token punctuation">[</span>current<span class="token punctuation">]</span>)<span class="token punctuation">{</span>
+			this.dfs<span class="token punctuation">[</span>current<span class="token punctuation">]</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+//广度优先
+function bfs(s)<span class="token punctuation">{</span>
+	var queue=<span class="token punctuation">[</span><span class="token punctuation">]</span>;
+	this.marked<span class="token punctuation">[</span>s<span class="token punctuation">]</span>=true;
+	queue.push(s);
+	while(queue.length<span class="token punctuation">&gt;</span>0)<span class="token punctuation">{</span>
+		var v=queue.shift();
+		if(v<span class="token tag">!=undefined)</span><span class="token punctuation">{</span>
+			console.log(v+&quot;bfs被访问&quot;)
+		<span class="token punctuation">}</span>
+		for(var w in this.adj<span class="token punctuation">[</span>v<span class="token punctuation">]</span>)<span class="token punctuation">{</span>
+			var current=this.adj<span class="token punctuation">[</span>v<span class="token punctuation">]</span><span class="token punctuation">[</span>w<span class="token punctuation">]</span>;
+			if(<span class="token tag">!this.marked</span><span class="token punctuation">[</span>current<span class="token punctuation">]</span>)<span class="token punctuation">{</span>
+				this.marked<span class="token punctuation">[</span>current<span class="token punctuation">]</span>=true;
+				this.edgeTo<span class="token punctuation">[</span>current<span class="token punctuation">]</span>=v
+				queue.push(current)
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+function hasPathTo(v)<span class="token punctuation">{</span>
+	return this.marked<span class="token punctuation">[</span>v<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+function PathTo(v)<span class="token punctuation">{</span>
+	var source=0;
+	if(<span class="token tag">!this.hasPathTo(v))</span><span class="token punctuation">{</span>
+		return undefined
+	<span class="token punctuation">}</span>
+	var path=<span class="token punctuation">[</span><span class="token punctuation">]</span>;
+	for(var i=v;i<span class="token tag">!=source;i=this.edgeTo</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span>)<span class="token punctuation">{</span>
+		path.push(i)
+	<span class="token punctuation">}</span>
+	path.push(source)
+	return path
+<span class="token punctuation">}</span>
+var g= new Graph(5);
+g.addEdge(0<span class="token punctuation">,</span>1);
+g.addEdge(0<span class="token punctuation">,</span>2);
+g.addEdge(1<span class="token punctuation">,</span>3);
+g.addEdge(2<span class="token punctuation">,</span>4);
+g.showGraph();
+g.bfs(0);
+var paths=g.PathTo(4);
+var str='';
+while(paths.length<span class="token punctuation">&gt;</span>0)<span class="token punctuation">{</span>
+	if(paths.length<span class="token punctuation">&gt;</span>1)<span class="token punctuation">{</span>
+		str+=paths.pop()+'<span class="token punctuation">-</span><span class="token punctuation">&gt;</span>'
+	<span class="token punctuation">}</span>else<span class="token punctuation">{</span>
+		str+=paths.pop()
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+console.log(str)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br></div></div><h2 id="算法-2"><a href="#算法-2" class="header-anchor">#</a> 算法</h2> <h3 id="算法复杂度"><a href="#算法复杂度" class="header-anchor">#</a> 算法复杂度</h3> <ul><li>一般做算法复杂度分析的时候，遵循下面的技巧：
+<ul><li>有几重循环，一般来说一重就是O(n)，两重就是 O(n^2)，以此类推</li> <li>如果有二分，则为O(logN)</li> <li>保留最高项，去除常数项
+<img src="arit_2.png" alt="算法复杂度"></li></ul></li></ul> <blockquote><p>基本算法</p></blockquote> <ul><li>枚举</li> <li>递归</li> <li>基本排序</li> <li>基本查找</li></ul> <h3 id="枚举算法"><a href="#枚举算法" class="header-anchor">#</a> 枚举算法</h3> <ul><li>核心思想：枚举所有的可能。</li> <li>本质：就是从所有候选答案中去搜索正确的解,使用该算法需要满足两个条件
+<ul><li>(1)可预先确定候选答案的数量；</li> <li>(2)候选答案的范围在求解之前必须有一个确定的集合。</li></ul></li> <li>特点：
+<ul><li>枚举算法简单粗暴，暴力的枚举所有可能，尽可能地尝试所有的方法。</li> <li>速度可能很慢，却是我们最应该优先考虑的。</li> <li>实现最简单，并且得到的结果总是正确的。</li></ul></li></ul> <h3 id="递归算法"><a href="#递归算法" class="header-anchor">#</a> 递归算法</h3> <ul><li>核心思想：通过重复将问题分解为同类的子问题而解决问题的方法。</li> <li>特点：
+<ul><li>函数可以通过调用自身来进行递归</li> <li>递归可以完全取代循环</li></ul></li> <li>递归由下面两部分组成：
+-（1）递归主体，就是要循环解决问题的代码
+-（2）递归的跳出条件，递归不能一直递归下去，需要完成一定条件后跳出</li></ul> <h3 id="排序算法"><a href="#排序算法" class="header-anchor">#</a> 排序算法</h3> <p><img src="arit_3.png" alt="排序算法"></p> <ul><li>数据结构排序之前都有专门的设计</li> <li>冒泡排序：它是最慢的排序算法之一，数据值会像气泡一样从数组的一端漂浮到另一端</li> <li>插入排序：类似于人类按数字或字母顺序对数据进行排序后面的要为前面腾位置</li> <li>选择排序：从数组的开头开始，将第一个元素和其他元素比较，最小的元素会被放到数组第一个位置，再从第二个位置继续。</li> <li>希尔排序：它会首先比较较远的元素而非相邻的元素。让元素尽快回到正确的位置。通过定义一个间隔序列来表示在排序过程中进行比较的元素间隔。公开的间隔序列是701、301、132、57、23、10、4、1</li> <li>快速排序：在列表中选择一个元素作为基准值，排序围绕这个基准值进行，将列表中小于基准值的放入数组底部大于放顶部</li> <li>归并排序：把一系列排好序的子序列合并成一个大的完整有序序列</li> <li>排序稳定性：选择排序、快速排序、希尔排序、堆排序不是稳定排序算法，冒泡排序、插入排序、归并排序和基数排序是稳定</li></ul> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>//冒泡排序
+function swap(arr<span class="token punctuation">,</span>index1<span class="token punctuation">,</span>index2)<span class="token punctuation">{</span>
+	var temp=arr<span class="token punctuation">[</span>index1<span class="token punctuation">]</span>;
+	arr<span class="token punctuation">[</span>index1<span class="token punctuation">]</span>=arr<span class="token punctuation">[</span>index2<span class="token punctuation">]</span>;
+	arr<span class="token punctuation">[</span>index2<span class="token punctuation">]</span>=temp;
+<span class="token punctuation">}</span>
+function bubbleSort(data)<span class="token punctuation">{</span>
+	var data=data;
+	num=data.length;
+	for(var outer=num;outer<span class="token punctuation">&gt;</span>=2;<span class="token punctuation">-</span><span class="token punctuation">-</span>outer)<span class="token punctuation">{</span>
+		for(var inner=0;inner&lt;=outer<span class="token punctuation">-</span>1;inner++)<span class="token punctuation">{</span>
+			if(data<span class="token punctuation">[</span>inner<span class="token punctuation">]</span><span class="token punctuation">&gt;</span>data<span class="token punctuation">[</span>inner+1<span class="token punctuation">]</span>)<span class="token punctuation">{</span>
+				swap(data<span class="token punctuation">,</span>inner<span class="token punctuation">,</span>inner+1)
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+	console.log(data)
+<span class="token punctuation">}</span>
+bubbleSort(<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span>)
+//选择排序
+function swap(arr<span class="token punctuation">,</span>index1<span class="token punctuation">,</span>index2)<span class="token punctuation">{</span>
+	var temp=arr<span class="token punctuation">[</span>index1<span class="token punctuation">]</span>;
+	arr<span class="token punctuation">[</span>index1<span class="token punctuation">]</span>=arr<span class="token punctuation">[</span>index2<span class="token punctuation">]</span>;
+	arr<span class="token punctuation">[</span>index2<span class="token punctuation">]</span>=temp;
+<span class="token punctuation">}</span>
+function selectSort(data)<span class="token punctuation">{</span>
+	var data=data;
+	var min;
+	for(var outer=0;outer&lt;data.length<span class="token punctuation">-</span>2;++outer)<span class="token punctuation">{</span>
+		min=outer;
+		for(var inner=outer+1;inner&lt;data.length<span class="token punctuation">-</span>1;++inner)<span class="token punctuation">{</span>
+			if(data<span class="token punctuation">[</span>inner<span class="token punctuation">]</span>&lt;data<span class="token punctuation">[</span>min<span class="token punctuation">]</span>)<span class="token punctuation">{</span>
+				min=inner
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+		swap(data<span class="token punctuation">,</span>outer<span class="token punctuation">,</span>min)
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+//快速排序
+function qSort(list)<span class="token punctuation">{</span>
+	if(list.length==0)<span class="token punctuation">{</span>
+		return <span class="token punctuation">[</span><span class="token punctuation">]</span>;
+	<span class="token punctuation">}</span>
+	var pivot=list<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>;
+	var lesser=<span class="token punctuation">[</span><span class="token punctuation">]</span>;
+	var greater=<span class="token punctuation">[</span><span class="token punctuation">]</span>;
+	for(var i=1;i&lt;list.length;i++)<span class="token punctuation">{</span>
+		if(list<span class="token punctuation">[</span>i<span class="token punctuation">]</span>&lt;pivot)<span class="token punctuation">{</span>
+			lesser.push(list<span class="token punctuation">[</span>i<span class="token punctuation">]</span>);
+		<span class="token punctuation">}</span>else<span class="token punctuation">{</span>
+			greater.push(list<span class="token punctuation">[</span>i<span class="token punctuation">]</span>);
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+	return qSort(lesser).concat(pivot<span class="token punctuation">,</span>qSort(greater))
+<span class="token punctuation">}</span>
+var data=<span class="token punctuation">[</span><span class="token number">64</span><span class="token punctuation">,</span><span class="token number">88</span><span class="token punctuation">,</span><span class="token number">22</span><span class="token punctuation">,</span><span class="token number">45</span><span class="token punctuation">,</span><span class="token number">66</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">]</span>
+//二分查找
+function bindSearch(arr<span class="token punctuation">,</span>data)<span class="token punctuation">{</span>
+	var upperbound=arr.length<span class="token punctuation">-</span>1;
+	var lowerbound=0;
+	while(lowerbound&lt;=upperbound)<span class="token punctuation">{</span>
+		var mid=Math.floor((lowerbound+upperbound)/2);
+		if(arr<span class="token punctuation">[</span>mid<span class="token punctuation">]</span>&lt;data)<span class="token punctuation">{</span>
+			lowerbound=mid+1;
+		<span class="token punctuation">}</span>else if(arr<span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token punctuation">&gt;</span>data)<span class="token punctuation">{</span>
+			upperbound=mid<span class="token punctuation">-</span>1;
+		<span class="token punctuation">}</span>else<span class="token punctuation">{</span>
+			return mid
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+	return <span class="token punctuation">-</span>1;
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br></div></div><ul><li>动态规划：动态规划是一种与递归相反的技术。递归从顶部开始分解出多个小问题，合并成解决方案。动态规划解决方案从底部分解很多小问题解决掉，组成解决方案</li> <li>贪心算法：它是一种寻找“优质解”为手段达成整体解决方案的算法。通过局部最优解的解决方案，得到全局最优解。</li></ul> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>function dynFib(n)<span class="token punctuation">{</span>
+	var val=<span class="token punctuation">[</span><span class="token punctuation">]</span>;
+	for(var i=0;i&lt;n;i++)<span class="token punctuation">{</span>
+		val<span class="token punctuation">[</span>i<span class="token punctuation">]</span>=0;
+	<span class="token punctuation">}</span>
+	if(n==0)<span class="token punctuation">{</span>
+		return 0;
+	<span class="token punctuation">}</span>else if(n==1<span class="token punctuation">|</span><span class="token punctuation">|</span>n==2)<span class="token punctuation">{</span>
+		return 1
+	<span class="token punctuation">}</span>else<span class="token punctuation">{</span>
+		val<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>=1;
+		val<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span>=1;
+		for(var i=3;i&lt;=n;i++)<span class="token punctuation">{</span>
+			val<span class="token punctuation">[</span>i<span class="token punctuation">]</span>=val<span class="token punctuation">[</span>i<span class="token punctuation">-</span><span class="token number">1</span><span class="token punctuation">]</span>+val<span class="token punctuation">[</span>i<span class="token punctuation">-</span><span class="token number">2</span><span class="token punctuation">]</span>
+		<span class="token punctuation">}</span>
+		console.log(val)
+		return val<span class="token punctuation">[</span>n<span class="token punctuation">]</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+console.log(&quot;动态规划&quot;<span class="token punctuation">,</span>dynFib(10))
+function iterFib(n)<span class="token punctuation">{</span>
+	if(n<span class="token punctuation">&gt;</span>0)<span class="token punctuation">{</span>
+		var last=1;
+		var nestlast=1;
+		var result=1;
+		for(var i=2;i&lt;n;i++)<span class="token punctuation">{</span>
+			result=last+nestlast;
+			nestlast=last;
+			last=result;
+		<span class="token punctuation">}</span>
+		return result
+	<span class="token punctuation">}</span>else<span class="token punctuation">{</span>
+		return 0
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+console.log(&quot;动态规划非数组&quot;<span class="token punctuation">,</span>iterFib(10))
+
+//贪心算法 找零 50，10，5，1
+function makeChange(orginRmb<span class="token punctuation">,</span>coins)<span class="token punctuation">{</span>
+	var remainRmb=0;
+	if(orginRmb%50&lt;orginRmb)<span class="token punctuation">{</span>
+		coins<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span>=parseInt(orginRmb%50<span class="token punctuation">,</span>10);
+		remainRmb=orginRmb%50;
+		orginRmb=remainRmb;
+	<span class="token punctuation">}</span>
+	if(orginRmb%10&lt;orginRmb)<span class="token punctuation">{</span>
+		coins<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span>=parseInt(orginRmb%10<span class="token punctuation">,</span>10);
+		remainRmb=orginRmb%10;
+		orginRmb=remainRmb;
+	<span class="token punctuation">}</span>
+	if(orginRmb%5&lt;orginRmb)<span class="token punctuation">{</span>
+		coins<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>=parseInt(orginRmb%5<span class="token punctuation">,</span>10);
+		remainRmb=orginRmb%5;
+		orginRmb=remainRmb;
+	<span class="token punctuation">}</span>
+	coins<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>=orginRmb%1
+<span class="token punctuation">}</span>
+var orginRmb=63;
+var coins=<span class="token punctuation">[</span><span class="token punctuation">]</span>;
+makeChange(orginRmb<span class="token punctuation">,</span>coins)
+if(coins<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">&gt;</span>0)<span class="token punctuation">{</span>
+	console.log(&quot;继续使用10块钱&quot;)
+<span class="token punctuation">}</span>
+if(coins<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">&gt;</span>0)<span class="token punctuation">{</span>
+	console.log(&quot;继续使用5块钱&quot;)
+<span class="token punctuation">}</span>
+if(coins<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">&gt;</span>0)<span class="token punctuation">{</span>
+	console.log(&quot;继续使用1块钱&quot;)
+<span class="token punctuation">}</span>
+if(coins<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>=0)<span class="token punctuation">{</span>
+	console.log(&quot;用完了&quot;)
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br></div></div><p><img src="arit_4.png" alt="查找算法"></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/test.html" class="prev">
+        习题总结
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a0896f0e.js" defer></script><script src="/assets/js/2.88eb2c00.js" defer></script><script src="/assets/js/9.8be87860.js" defer></script>
+  </body>
+</html>
